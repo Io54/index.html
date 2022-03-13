@@ -138,19 +138,16 @@ header {
 }
 
 body.switchMode .adress {
-  color: #dfdede;
+	color: rgb(223, 222, 222);
 }
-
-body.switchMode .email a {
-  color: #dfdede;
+body.switchMode .email a:link {
+	color: rgb(223, 222, 222);
 }
-
-body.switchMode .phone a {
-  color: #dfdede;
+body.switchMode .phone a:link {
+	color: rgb(223, 222, 222);
 }
-
-.info a {
-  color: #333;
+.info a:link {
+	color: #333;
 }
 
 .adress {
