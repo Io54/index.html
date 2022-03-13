@@ -138,16 +138,19 @@ header {
 }
 
 body.switchMode .adress {
-	color: rgb(223, 222, 222);
+  color: #dfdede;
 }
+
 body.switchMode .email a:link {
-	color: rgb(223, 222, 222);
+  color: #dfdede;
 }
+
 body.switchMode .phone a:link {
-	color: rgb(223, 222, 222);
+  color: #dfdede;
 }
+
 .info a:link {
-	color: #333;
+  color: #333;
 }
 
 .adress {
@@ -157,6 +160,7 @@ body.switchMode .phone a:link {
 .header__head {
   position: relative;
   background-color: #191819;
+  min-width: 70vw;
 }
 
 .container {
@@ -270,6 +274,8 @@ body.switchMode .head__inner nav ul li.switch a:after {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header__body_inner .left .title {
@@ -304,7 +310,7 @@ a.btn:hover {
 }
 
 .header__body_inner .right img {
-  width: 300px;
+  width: 330px;
 }
 
 section {
@@ -327,6 +333,26 @@ body.switchMode .section__title {
 
 .about__margin {
   margin: 120px 0px 0px 0px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__text {
+  max-width: 860px;
 }
 
 .about__text p {
@@ -345,14 +371,18 @@ body.switchMode .about__text p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sertificate img {
   max-width: 300px;
   border: 5px solid #000;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body.switchMode .sertificate img {
@@ -440,8 +470,8 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 140px;
-  height: 120px;
+  width: 8.5vw;
+  height: 8.5vw;
   -webkit-transform: skewX(-30deg);
           transform: skewX(-30deg);
   background: -webkit-gradient(linear, right top, left top, color-stop(50%, #000), color-stop(50%, #f83b3a));
@@ -449,13 +479,15 @@ footer p {
   background-size: 210%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .nav__link {
   -webkit-transform: skewX(30deg);
           transform: skewX(30deg);
   color: #000;
-  font-size: 50px;
+  font-size: 3vw;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
