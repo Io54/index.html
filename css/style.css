@@ -170,6 +170,22 @@ body.switchMode .phone a:link {
   padding: 15px;
 }
 
+@media (max-width: 1200px) {
+	.container {
+		max-width: 970px;
+	}
+}
+@media (max-width: 992px) {
+	.container {
+		max-width: 750px;
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		max-width: none;
+	}
+}
+
 .container_opit {
   position: absolute;
   max-width: 1200px;
@@ -484,6 +500,13 @@ footer p {
       flex-wrap: wrap;
 }
 
+@media (max-width: 767px) {
+	.nav__item {
+		width: 75px;
+		height: 50px;
+	}
+}
+
 .nav__link {
   -webkit-transform: skewX(30deg);
           transform: skewX(30deg);
@@ -491,6 +514,12 @@ footer p {
   font-size: 3vw;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+@media (max-width: 767px) {
+	.nav__link {
+		font-size: 20px;
+	}
 }
 
 .nav__item:hover {
